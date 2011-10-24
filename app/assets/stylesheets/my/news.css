@@ -1,0 +1,76 @@
+#news{
+  margin:20px 32px 5px 32px;
+  font-size:12px;
+}
+#news a{
+  color:#606060;
+}
+#news a:hover{
+  color:#B7B7B7;
+}
+#news .knk_new{
+  margin-bottom:25px;
+}
+#news .knk_new .knk_new_title{
+  margin-bottom:2px;
+  color:#606060;  
+  font-size:14px;  
+}
+#news .knk_new .knk_new_title a{
+  text-decoration:none;
+}
+#news .knk_new .knk_new_title .crumb{
+  text-decoration:underline;
+  font-size:16px;
+  color:#7C7C7C;
+}
+#news .knk_new .knk_new_title .crumb2{
+  font-size:16px;
+  color:#3b3b3b;
+}
+#news .knk_new .knk_new_title a:hover{
+  color:#4F4F4F;
+  text-decoration:underline;
+}
+#news .knk_new .knk_new_body{
+  padding:5px;
+  text-align:justify;
+}
+#news .knk_new .more{
+  font-size:11px;
+  margin-top:10px;
+  padding-left:5px;
+  text-decoration:underline;
+}
+#news .knk_new .knk_new_date{
+  font-size:10px;
+  margin-top:5px;
+  padding-left:5px;
+}
+#news .news_paginate{
+  float:right;
+  margin:0 auto;
+  text-align:center;
+  margin-top:10px;
+  font-size:14px;  
+}
+#news .news_paginate a{
+  color:#fff;
+  text-decoration:none;
+}
+#news .news_paginate a:hover{
+  color:#515151;
+}
+#news .news_paginate span{
+  display:block;
+  padding:7px;
+  background:#dddcda;
+  color:#6A6A6A;
+  float:left;
+  margin-right:5px;
+  text-decoration:none;
+  -webkit-border-radius: 5px 5px 5px 5px;
+  -moz-border-radius: 5px 5px 5px 5px;
+  border-radius: 5px 5px 5px 5px;
+  -o-border-radius: 5px 5px 5px 5px;  
+}

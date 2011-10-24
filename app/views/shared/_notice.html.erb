@@ -1,0 +1,9 @@
+<% if flash[:notice] %>
+  <% flash.each do |name, msg| %>
+    <%= content_tag :div, msg, :id => "notice" %>
+  <% end %>
+<% elsif flash[:alert] %>
+  <% flash.each do |name, msg| %>
+    <%= content_tag :div, msg, :id => "alert" %>
+  <% end %>
+<% end %>

@@ -1,0 +1,33 @@
+// Active Admin CSS Styles
+@import "active_admin/mixins";
+@import "active_admin/base";
+
+// To customize the Active Admin interfaces, add your
+// styles here:
+
+#product_published_input{
+  width:300px;
+  margin-left:175px;
+}
+.published_column{
+  padding:2px;
+  color:#fff;
+  width:110px;
+  text-align:center;
+  background:#93D66E;
+  -webkit-border-radius: 5px 5px 5px 5px;
+  -moz-border-radius: 5px 5px 5px 5px;
+  border-radius: 5px 5px 5px 5px;
+  -o-border-radius: 5px 5px 5px 5px;
+}
+.unpublished_column{
+  padding:2px;
+  color:#fff;
+  width:110px;
+  text-align:center;
+  background:#C75C50;
+  -webkit-border-radius: 5px 5px 5px 5px;
+  -moz-border-radius: 5px 5px 5px 5px;
+  border-radius: 5px 5px 5px 5px;
+  -o-border-radius: 5px 5px 5px 5px;
+}

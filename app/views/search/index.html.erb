@@ -1,0 +1,24 @@
+<div class="search_result">
+  <div class="title_result">
+    Результаты поиска:
+  </div>
+  <div id="table_for_products">
+      <table>
+        <tr class="head">
+          <td>Наименование:</td>
+          <td>Описание:</td>
+          <td>Производитель:</td>
+          <td>Категория:</td>
+        </tr>
+        <% @products.each do |product| %>
+          <tr class="<%= cycle('list_line_odd', 'list_line_even') %>">
+            <td><%= product.name %></td>
+            <td><%= product.description %></td>
+            <td><%= product.manufact %></td>
+            <td><%= link_to product.category.name, product.category %></td>
+          </tr>
+        <% end %>
+      </table>
+  </div>
+</div>
+<div class="clear"></div>

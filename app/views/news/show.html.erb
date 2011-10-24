@@ -1,0 +1,13 @@
+<div id="news">
+    <div class="knk_new">
+      <div class="knk_new_title">
+        <%= link_to "Новости", news_index_path, :class => "crumb" %> → <span class="crumb2"><%= @new.title %></span>
+      </div>
+      <div class="knk_new_body">
+        <%= @new.body %>
+      </div>
+      <div class="knk_new_date">
+        Дата добавления: <%= date(@new) %>
+      </div>
+    </div>
+</div>

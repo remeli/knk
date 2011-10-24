@@ -1,0 +1,49 @@
+.search_result{
+  margin-top:5px;
+  float:left;
+  width:100%;
+}
+.search_result .title_result{
+  font-size:18px;
+  margin-left:25px;
+}
+#table_for_products{
+  width:800px;
+  float:left;
+  margin-top:20px;
+}
+#table_for_products a{
+  color:#3b3b3b;
+}
+#table_for_products a:hover{
+  color:#ccc;
+}
+#table_for_products table{
+  margin-left:100px;
+  width:98%;
+  font-size:12px;
+  font-family:Tahoma,Helvetica,sans-serif;
+  border-collapse: collapse;
+  text-shadow: 0 1px 0px rgba(0,0,0,0.1);
+}
+#table_for_products table tr{
+  height:20px;
+}
+#table_for_products table td{
+  width:20%;
+  vertical-align: middle;
+  padding:10px;
+  border:1px solid #ccc;
+}
+table .head{
+  font-size:14px;
+  font-weight: bold;
+  background:#EAEAEA;
+}
+.list_line_odd{
+  background:#fff;
+
+}
+.list_line_even{
+  background:#f7f7f7;
+}

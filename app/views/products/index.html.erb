@@ -1,0 +1,36 @@
+<%= flash_message(@products) %>
+<div id="catalog">
+  <div class="cat_content">
+    <div id="path">
+      <span class="title_path"><%= link_to "Каталог", products_path %> → Все товары</span>
+    </div>
+    <div id="categories">
+      <ul>
+        <% @categories.each do |category| %>
+          <li><%= link_to category.name, category %></li>
+        <% end %>
+      </ul>
+    </div>
+    <div id="table_for_products">
+        <table>
+          <tr class="head">
+            <td>Наименование:</td>
+            <td>Описание:</td>
+            <td>Производитель:</td>
+          </tr>
+          <% @products.each do |product| %>
+            <tr class="<%= cycle('list_line_odd', 'list_line_even') %>">
+              <td><%= product.name %></td>
+              <td><%= product.description %></td>
+              <td><%= product.manufact %></td>
+            </tr>
+          <% end %>  
+        </table>
+    </div>    
+  </div>
+  <div class="clear"></div>
+  <div class="catalog_paginate">
+    <%= paginate @products %>
+  </div>
+</div>
+<div class="clear"></div>

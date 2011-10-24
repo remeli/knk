@@ -1,0 +1,13 @@
+<b>КНК-ЭЛЕКТРО. Обратная связь.</b><br />
+===============================
+<p>
+<b>Данные клиента:</b>  
+</p>
+
+<p>
+<i>Имя:</i> <%= @message[:name] %><br />
+<i>e-mail:</i> <%= link_to @message[:email], "mailto:#{@message[:email]}" %><br />
+<i>телефон:</i> <%= @message[:phone] %>
+</p>
+<p><b>Сообщение:</b></p>
+<p><%= @message[:message] %></p>

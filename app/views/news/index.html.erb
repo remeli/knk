@@ -1,0 +1,23 @@
+<div id="news">
+  <%= flash_message(alert) %>
+  <% @news.each do |new| %>
+    <div class="knk_new">
+      <div class="knk_new_title">
+        <%= link_to new.title, new %>
+      </div>
+      <div class="knk_new_body">
+        <%= news_more(new) %>
+      </div>
+      <div>
+        <%= link_to("Читать дальше", new, :class=> "more") %>
+      </div>
+      <div class="knk_new_date">
+        Дата добавления: <%= date(new) %>
+      </div>
+    </div>
+  <% end %>
+  <div class="news_paginate">
+    <%= paginate @news %>
+  </div>
+  <div class="clear"></div>
+</div>

@@ -1,0 +1,43 @@
+<div class="block_about_prod">
+  <div class="text_prod">
+    <h1>Продукция</h1>
+    <ul>
+      <li>кабельная продукция</li>
+      <li>электромонтажные товары</li>
+    </ul>          
+  </div>
+</div>
+<div class="block_manufact">
+  <div class="manufact_info">
+    <h1>Продукция</h1>
+    <ul>
+      <li>пускозащитная аппаратура (ПЗА)</li>
+      <li>низковольтные устройства(НКУ)</li>
+      <li>светотехническая продукция</li>
+    </ul>
+  </div>
+</div>
+<div class="clear"></div>
+<div id="main_news_block">
+  <h1>Новости</h1>
+  <div class="news_list">
+    <% @main_page_news.each do |new| %>
+      <div class="news_each">
+        <div class="title_news">
+          <div class="info">
+            <div class="date">
+              <%= date(new) %>, Новости компании
+            </div>
+            <div class="title_text">
+              <%= link_to title_more(new), new %>
+            </div>
+          </div>
+        </div>
+        <div class="news_small_text">
+          <%= news_more(new, 170) %>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</div>
+<%= render 'shared/feedback_block' %>

@@ -1,0 +1,16 @@
+<div id="footer">
+  <div class="copyright">
+    <%= data_company[:name] %> &copy; <%= data_company[:year_copy] %>
+  </div>
+  <div id="footer_menu">
+    <ul>
+      <li><%= link_to "Главная", root_path %></li>
+      <li><%= link_to "Каталог продукции", products_path %></li>
+      <li><%= link_to "Новости", news_index_path %></li>
+      <li><%= link_to "Контакты", contacts_path %></li>
+    </ul>
+  </div>
+  <div id="developer">
+    Сделано в <a href="http://remeli.kz"><span class="first">R</span>emeli</a>
+  </div>
+</div>

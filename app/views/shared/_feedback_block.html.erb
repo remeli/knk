@@ -1,0 +1,76 @@
+<div id="feedback_block">
+  <h1>Обратная связь</h1>
+  <div class="text_feedback">
+            Сегодня это крупнейшая и динамически развивающаяся компания в РК в области поставок электротехнической продукции и оборудования.
+  </div>
+  <div class="form_feedback">
+      <table>
+        <%= form_tag "/feedback", :method => :post, :onsubmit => "return checkForm(this);" do %>
+        <tr>
+          <td>
+            <label for="name">Ваше имя: </label>
+          </td>
+          <td>
+            <%= text_field_tag :name, nil, :class => "field_feedback" %>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="email">Ваш e-mail: </label>
+          </td>
+          <td>
+            <%= text_field_tag :email, nil, :class => "field_feedback" %>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="phone">Телефон:</label>
+          </td>
+          <td>
+            <%= text_field_tag :phone, nil, :class => "field_feedback" %>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="message">Сообщение:</label>
+          </td>
+          <td>
+            <%= text_area_tag :message %>
+          </td>
+        </tr>
+        <tr class="feedback_submit_cell" colspan="2">
+          <td>
+            <%= submit_tag "", :class => "feedback_submit_button" %>
+          </td>
+        </tr>
+        <% end %>
+      </table>
+  </div>
+  <div class="banner_info">
+    <div class="banner_header">
+      <h1><%= data_company[:name] %></h1>
+      <p><%= data_company[:description_company] %></p>
+    </div>
+    <div id="banner_contacts">
+      <div id="phone">
+        <%= data_company[:phone_code] %>
+        <span><%= data_company[:phone] %></span>
+      </div>
+      <div>
+        e-mail: <%= link_to data_company[:email], "mailto:#{data_company[:email]}" %>
+      </div>
+    </div>
+    <div class="banner_address">
+      <div>Казахстан</div>
+      <div>Костанай</div>
+      <div>ул.Гагарина 187</div>
+    </div>
+    <div class="banner_graph">
+      <p>пн-пт: 9.00-18.00</p>
+      <p>суббота: 9.00-15.00</p>
+    </div>
+    <div class="how_search">
+      <%= link_to "Как нас найти", contacts_path %>
+    </div>
+  </div>
+</div>
