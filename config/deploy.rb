@@ -30,10 +30,10 @@ task :copy_database_config, roles => :app do
   run "cp #{db_config} #{release_path}/config/database.yml"
 end
 
-after "deploy:update_code", :compile_assets
-task :compile_assets do
-   run "cd #{current_path} && RAILS_ENV=production /var/lib/gems/1.8/bin/bundle exec rake assets:precompile"
-end
+# after "deploy:update_code", :compile_assets
+# task :compile_assets do
+#    run "cd #{current_path} && RAILS_ENV=production /var/lib/gems/1.8/bin/bundle exec rake assets:precompile"
+# end
 # #paperclip
 # task :symlink_shared, roles => :app do
 #   run "ln -nfs #{shared_path}/system #{release_path}/public/system"
