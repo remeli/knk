@@ -59,7 +59,7 @@ namespace :deploy do
   end
 end
 
-after :'deploy:restart', :compile_assets
+after :copy_database_config, :compile_assets
 task :compile_assets do
    run "cd #{current_path} && RAILS_ENV=production /var/lib/gems/1.8/bin/bundle exec rake assets:precompile"
 end
