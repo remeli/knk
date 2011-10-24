@@ -5,5 +5,5 @@
  *= require_self
  *= require reset
  #= require style
- *= require_directory ./my
+ *= require_directory ./app
 */
