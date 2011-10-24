@@ -51,22 +51,3 @@ function checkForm(obj){
        
     return return_value;
 }
-// function checkFormSearch(obj){
-//     var return_value = true;
-//     
-//     // заносим значение поля сообщение в переменную msg
-//     var name = obj.name.value;
-//     
-//     // объявляем переменную куда будет заносится текст сообщения
-//     var error_msg = "Заполните поле";
-//    
-//     //проверка поля текст сообщения
-//     if(name == ""){
-//         return_value = false;
-//     }
-//     //проверка на наличие ошибок, если возникла ошибка ввыводим текст сообщения
-//     if(!return_value)
-//         alert(error_msg);
-//        
-//     return return_value;
-// }

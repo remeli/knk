@@ -1,10 +1,3 @@
-/*
- * jsImageBox - slim and simple image modal viewer for webpages http://www.jsimagebox.ru
- * Copyright (C) 2008 c0rr, p_ann 
- * 
- * Licensed under the terms of GNU General Public License Version 2 or later (the "GPL")
- *    http://www.gnu.org/licenses/gpl.html
- */
 var jsiBox = {
 	boxBorderColor : '#727272',
 	boxBorderWidth : '1px',
