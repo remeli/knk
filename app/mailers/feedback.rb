@@ -1,5 +1,5 @@
 class Feedback < ActionMailer::Base
-  default :to => "lagox@mail.ru"
+  default :to => "knk-electro@yandex.kz"
   
   def push_message(message)
     @message = message

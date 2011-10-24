@@ -1,6 +1,6 @@
 class PagesController < ApplicationController
   def index
-    @title = "Главная"
+    @title = "Электротехническая продукция лучших производителей России, Китая и СНГ"
     @main_page_news = New.limit(3)    
     render :layout => 'main_page'
   end
