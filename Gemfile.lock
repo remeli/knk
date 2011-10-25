@@ -170,7 +170,7 @@ PLATFORMS
 DEPENDENCIES
   activeadmin
   capistrano
-  coffee-rails (~> 3.1)
+  coffee-rails
   jquery-rails
   json
   kaminari
@@ -179,7 +179,7 @@ DEPENDENCIES
   rails (~> 3.1)
   rails-dev-tweaks (~> 0.5.1)
   rake (~> 0.9.2)
-  sass-rails (~> 3.1)
+  sass-rails
   therubyracer
   uglifier
   unicorn
