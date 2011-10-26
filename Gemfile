@@ -14,7 +14,7 @@ gem 'unicorn'
 gem 'activeadmin'
 gem "meta_search", '~> 1.1.1'
 gem 'kaminari'
-
+gem "acts_as_tree", "~> 0.1.1"
 group :development do
   gem 'rails-dev-tweaks', '~> 0.5.1'  
 end
