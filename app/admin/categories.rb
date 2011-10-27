@@ -9,7 +9,12 @@ ActiveAdmin.register Category do
   
   form do |f|
     f.inputs "Детали" do
-      f.input :name, :label => "Название категории"
+      f.inputs "Родительская категория" do
+       f.collection_select :parent_id, Category.all(:order => "name"), :id, :name, :include_blank => true
+      end
+      f.inputs "Основная категория:" do
+        f.input :name, :label => "Название:"
+      end
     end
     f.buttons
   end
