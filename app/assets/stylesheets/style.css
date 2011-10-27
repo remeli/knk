@@ -165,6 +165,7 @@ background: #dd2a1b;
 #jsddm #last_jsddm a{
 -webkit-border-radius: 0px 0px 5px 5px;
 -moz-border-radius: 0px 0px 5px 5px;
+
 border-radius:0px 0px 5px 5px;
 -o-border-radius: 0px 0px 5px 5px;
 }
@@ -264,6 +265,13 @@ text-align: left;
 font-size: 11px;
 font-family: Arial;
 }
+#content .block_about_prod .text_prod ul li a{
+  color:#fff;
+  text-decoration:none;
+}
+#content .block_about_prod .text_prod ul li a:hover{
+  text-decoration:underline;
+}
 #content .block_manufact {
 float: left;
 margin-top: 40px;
@@ -301,6 +309,13 @@ list-style-type: disc;
 text-align: left;
 font-size: 11px;
 font-family: Arial;
+}
+#content .block_manufact .manufact_info ul li a{
+  color:#fff;
+  text-decoration:none;
+}
+#content .block_manufact .manufact_info ul li a:hover{
+  text-decoration:underline;
 }
 #content .block_manufact .manufact_info .man_logo {
 margin-top: 15px;
