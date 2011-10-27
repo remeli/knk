@@ -34,3 +34,25 @@
 #category_parent_id{
   margin-left:250px; 
 }
+.children{
+  padding:2px;
+  color:#a4a4a4;
+  width:200px;
+  text-align:center;
+  background:#eeeeee;
+  -webkit-border-radius: 5px 5px 5px 5px;
+  -moz-border-radius: 5px 5px 5px 5px;
+  border-radius: 5px 5px 5px 5px;
+  -o-border-radius: 5px 5px 5px 5px;
+}
+.parent{
+  padding:2px;
+  color:#fff;
+  width:200px;
+  text-align:center;
+  background:#a4a4a4;
+  -webkit-border-radius: 5px 5px 5px 5px;
+  -moz-border-radius: 5px 5px 5px 5px;
+  border-radius: 5px 5px 5px 5px;
+  -o-border-radius: 5px 5px 5px 5px;
+}
