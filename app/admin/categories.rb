@@ -4,7 +4,7 @@ ActiveAdmin.register Category do
   index do
     column :id
     column :name
-    column "Тип категории:", :childrens, :sortable => :childrens do |category|
+    column "Тип категории:", :childrens do |category|
       if category.parent
         div :class => "children" do
           "Подкатегория"
