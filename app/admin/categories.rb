@@ -4,6 +4,7 @@ ActiveAdmin.register Category do
   index do
     column :id
     column :name
+    column "Родительская категория"
     default_actions
   end
   
