@@ -1,12 +1,19 @@
 <div id="catalog">
   <div class="cat_content">
     <div id="path">
-      <span class="title_path"><%= link_to "Каталог", products_path %> → </span> <%= @category.name %>
+      <span class="title_path"><%= link_to "Каталог", products_path %> </span> 
+      <% @path.reverse.each do |p| %>
+        → <%= link_to p.name, p %> 
+      <% end %>
+      → <%= @category.name %>
     </div>
     <div id="categories">
       <ul>
-        <% @categories.each do |category| %>
-          <li><%= link_to category.name, category %></li>
+        <% for category in @main_categories %>
+          <li>
+            <%= link_to category.name, category %>
+            <%= raw find_all_subcategories(category) %>
+          </li>
         <% end %>
       </ul>
     </div>

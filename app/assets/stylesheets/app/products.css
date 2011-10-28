@@ -8,7 +8,14 @@
 #path{
   margin-bottom:30px; 
   margin-left:10px;
-  font-size:18px;
+  font-size:16px;
+}
+#path  a{
+  color:#7C7C7C;
+  text-decoration:none;
+}
+#path  a:hover{
+  color:#51555D;
 }
 #path .title_path a{
   color:#7C7C7C;
