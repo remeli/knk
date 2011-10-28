@@ -26,7 +26,7 @@
           </tr>
           <% @products.each do |product| %>
             <tr class="<%= cycle('list_line_odd', 'list_line_even') %>">
-              <td><%= product.name %></td>
+              <td><%= link_to product.name, product %></td>
               <td><%= product.description %></td>
               <td><%= product.manufact %></td>
             </tr>

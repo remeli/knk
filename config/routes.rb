@@ -2,7 +2,7 @@ Knk::Application.routes.draw do
   # resources
   resources :news, :only => [:index, :show]
   resources :categories, :only => [:index, :show]
-  resources :products, :only => [:index]
+  resources :products, :only => [:index, :show]
   
   ActiveAdmin.routes(self)
 

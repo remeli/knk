@@ -11,4 +11,6 @@ class ApplicationController < ActionController::Base
     Feedback.push_message(message).deliver
     redirect_to root_path, :notice => "Сообщение отправлено!"
   end
+  
+
 end

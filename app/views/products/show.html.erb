@@ -1,0 +1,16 @@
+<%= flash_message(@products) %>
+<div id="show_product">
+    <div class="title">
+      <%= @product.name %>
+    </div>
+    <div class="content">
+      <p><b>Описание:</b> <%= @product.description %></p>
+      <p><b>Производитель:</b> <%= @product.manufact %></p>
+      <p><b>Параметры:</b></p>
+    </div>
+    <div class="add_date">
+      Дата добавления: <%= date(@product) %>
+    </div>
+  <div class="clear"></div>
+</div>
+<div class="clear"></div>

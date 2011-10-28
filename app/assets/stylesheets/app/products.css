@@ -62,6 +62,7 @@
   height:20px;
 }
 #catalog #table_for_products table td{
+  text-align:center;
   width:20%;
   vertical-align: middle;
   padding:10px;
@@ -105,4 +106,29 @@ table .head{
   -moz-border-radius: 5px 5px 5px 5px;
   border-radius: 5px 5px 5px 5px;
   -o-border-radius: 5px 5px 5px 5px;  
+}
+
+/* show page */
+#show_product{
+  border:1px solid #EEE;
+  margin:0 auto;
+  width:90%;
+  padding:10px;
+}
+#show_product .title{
+  font-size:18px;
+  background:#eee;
+  padding:5px;
+  color:#6C6C6C;
+}
+#show_product .content{
+  margin-top:10px;
+  font-size:12px;
+}
+#show_product .content p{
+  margin-top:4px;
+}
+#show_product .add_date{
+  font-size:11px;
+  margin-top:10px;
 }
