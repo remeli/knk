@@ -13,10 +13,10 @@
       <b>Фотография:</b>
     </div>
     <div class="photo_image">
-    <a href="<%= @product.photo.url(:medium) %>" onclick="return jsiBoxOpen(this)" title="<%="#{@product.name} #{@product.description}" %>"><%= image_tag @product.photo.url(:thumb), :alt => "#{@product.name} #{@product.description}" %></a>      
+    <a href="<%= @product.photo.url(:medium) %>" class="lightbox" title="<%="#{@product.name} #{@product.description}" %>"><%= image_tag @product.photo.url(:thumb), :alt => "#{@product.name} #{@product.description}" %></a>          
     </div>
     </div>
-    <div class="clear"></div>  
+    <div class="clear"></div>
     <div class="add_date">
       Дата добавления: <%= date(@product) %>
     </div>

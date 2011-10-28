@@ -31,7 +31,7 @@ ActiveAdmin.register Product do
       end
       f.input :name, :label => "Название товара: "
       f.input :description, :label => "Описание: "
-      f.input :photo, :as => :file
+      f.input :photo, :as => :file, :label => "Фотография:"
       f.input :manufact, :label => "Производитель: "
       f.input :published, :label => "Опубликовано"
     end

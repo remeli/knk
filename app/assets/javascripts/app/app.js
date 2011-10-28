@@ -83,3 +83,8 @@ $(document).ready(function() {
     $('#jsddm > li').bind('mouseout',  jsddm_timer);
 });
 document.onclick = jsddm_close;
+
+//lightbox
+$(document).ready(function() {
+  $('a.lightbox').lightBox();
+});
