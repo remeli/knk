@@ -24,13 +24,14 @@ ActiveAdmin.register Product do
     default_actions
   end
   
-  form do |f|
+  form :html => { :enctype => "multipart/form-data" } do |f|
     f.inputs "Детали" do
       f.inputs do
         f.input :category, :label => "Рубрика: *"
       end
       f.input :name, :label => "Название товара: "
       f.input :description, :label => "Описание: "
+      f.input :photo, :as => :file
       f.input :manufact, :label => "Производитель: "
       f.input :published, :label => "Опубликовано"
     end

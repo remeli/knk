@@ -12,4 +12,12 @@ class Product < ActiveRecord::Base
   # validates:
   validates :name, :presence => { :message => "Название обязательно" }
   validates :category_id, :presence => { :message => "Рубрика обязательна" }
+  
+  #paperclip -> #photo
+  has_attached_file :photo, :styles => { :thumb => "300x230>", :medium => "680x450>" },
+  :url => "/system/:attachment/:id/:style/:basename.:extension",
+  :path => ":rails_root/public/system/:attachment/:id/:style/:basename.:extension"
+  validates_attachment_size :photo, :less_than => 6.megabytes
+  validates_attachment_content_type :photo, :content_type => ['image/jpeg', 'image/png', 'image/gif']
+  
 end

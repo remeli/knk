@@ -58,4 +58,10 @@ module ApplicationHelper
     end
   end  
   
+  def photo_product(object)
+    if object.photo.size.to_i > 0
+      image_tag('/assets/camera.png')
+    end
+    
+  end
 end

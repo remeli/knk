@@ -28,7 +28,9 @@
               <td><%= link_to product.name, product %></td>
               <td><%= product.description %></td>
               <td><%= product.manufact %></td>
-              <td><img src="/assets/camera.png" alt="" width="16" height="16"></td>
+              <td>
+                <%= photo_product(product) %>
+              </td>
             </tr>
           <% end %>  
         </table>
