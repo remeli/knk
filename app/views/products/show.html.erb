@@ -8,9 +8,17 @@
       <p><b>Производитель:</b> <%= @product.manufact %></p>
       <p><b>Параметры:</b></p>
     </div>
+    <div class="photo_cont">
+    <div class="photo_product_title">
+      <b>Фотография:</b>
+    </div>
+    <div class="photo_image">
+    <a href="<%= @product.photo.url(:medium) %>" onclick="return jsiBoxOpen(this)" title="<%="#{@product.name} #{@product.description}" %>"><%= image_tag @product.photo.url(:thumb), :alt => "#{@product.name} #{@product.description}" %></a>      
+    </div>
+    </div>
+    <div class="clear"></div>  
     <div class="add_date">
       Дата добавления: <%= date(@product) %>
     </div>
-  <div class="clear"></div>
 </div>
 <div class="clear"></div>

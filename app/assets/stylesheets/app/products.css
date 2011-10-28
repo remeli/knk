@@ -113,7 +113,6 @@ table .head{
   border:1px solid #EEE;
   margin:0 auto;
   width:90%;
-  padding:10px;
 }
 #show_product .title{
   font-size:18px;
@@ -124,11 +123,32 @@ table .head{
 #show_product .content{
   margin-top:10px;
   font-size:12px;
+  float:left;
+  width:380px;
+  padding:10px;
 }
 #show_product .content p{
   margin-top:4px;
 }
+#show_product .photo_cont{
+  float:left;
+  width:440px;
+  padding:10px;
+  margin-left:10px;
+  margin-top:10px;
+  border-left:1px solid #eee;
+  padding-left:30px;
+}
+.photo_cont .photo_product_title{
+  font-size:12px;
+  margin-bottom:20px;
+}
+.photo_image{
+  text-align:center;
+}
 #show_product .add_date{
+  border-top:1px solid #eee;
   font-size:11px;
   margin-top:10px;
+  padding:5px;
 }
