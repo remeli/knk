@@ -23,12 +23,14 @@
             <td>Наименование:</td>
             <td>Описание:</td>
             <td>Производитель:</td>
+            <td>Наличие фотографии:</td>
           </tr>
           <% @products.each do |product| %>
             <tr class="<%= cycle('list_line_odd', 'list_line_even') %>">
               <td><%= link_to product.name, product %></td>
               <td><%= product.description %></td>
               <td><%= product.manufact %></td>
+              <td><%= photo_product(product) %></td>
             </tr>
           <% end %>  
         </table>
