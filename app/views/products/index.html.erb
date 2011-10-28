@@ -6,8 +6,11 @@
     </div>
     <div id="categories">
       <ul>
-        <% @categories.each do |category| %>
-          <li><%= link_to category.name, category %></li>
+        <% for category in @main_categories %>
+          <li>
+            <%= link_to category.name, category %>
+            <%= raw find_all_subcategories(category) %>
+          </li>
         <% end %>
       </ul>
     </div>

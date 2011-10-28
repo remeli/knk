@@ -38,5 +38,24 @@ module ApplicationHelper
   def flash_message(object)
     render(:partial => "shared/notice", :locals => { :notice => object })
   end
-    
+  
+  def find_all_subcategories(category)
+    if category.children.size > 0
+      ret = "<ul>"
+      category.children.each { |subcat|
+        if subcat.children.size > 0
+          ret += "<li>"
+          ret += link_to subcat.name, subcat
+          ret += find_all_subcategories(subcat)
+          ret += "</li>"
+        else
+          ret += "<li>"
+          ret += link_to subcat.name, subcat
+          ret += "</li>"
+        end
+      }
+      ret += "</ul>" 
+    end
+  end  
+  
 end
