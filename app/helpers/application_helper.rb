@@ -69,7 +69,6 @@ module ApplicationHelper
       true
     end
   end
-
   
   def attach_have?(object)
     if object.attach.size.to_i > 0
@@ -77,7 +76,6 @@ module ApplicationHelper
     end
   end
 
-  
   def select_icon(object)
     doc_mime = /word/
     excel_mime = /excel/

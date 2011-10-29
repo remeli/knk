@@ -32,6 +32,9 @@
 #categories ul{
   margin-left:15px;
 }
+#categories .select{
+  
+}
 #categories ul li{
   list-style-type: none;
   margin-bottom:4px;
