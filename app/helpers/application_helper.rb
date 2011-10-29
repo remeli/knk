@@ -61,7 +61,28 @@ module ApplicationHelper
   def photo_product(object)
     if object.photo.size.to_i > 0
       image_tag('/assets/camera.png')
+    end    
+  end
+  
+  def attach_have?(object)
+    if object.attach.size.to_i > 0
+      true
     end
-    
+  end
+
+  
+  def select_icon(object)
+    doc_mime = /word/
+    excel_mime = /excel/
+    pdf_mime = /pdf/
+    if object.attach_content_type =~ doc_mime
+      image_tag("word_icon.png")
+    elsif object.attach_content_type =~ excel_mime
+      image_tag("excel_icon.png")
+    elsif object.attach_content_type =~ pdf_mime
+      image_tag("pdf_icon.png")
+    else
+      image_tag("unknown_icon.png")
+    end
   end
 end

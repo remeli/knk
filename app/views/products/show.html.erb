@@ -7,6 +7,12 @@
       <p><b>Описание:</b> <%= @product.description %></p>
       <p><b>Производитель:</b> <%= @product.manufact %></p>
       <p><b>Параметры:</b></p>
+      <% if attach_have?(@product) %>
+        <div class="attach_file">
+          Прикрепленный файл: 
+          <a href="<%= @product.attach.url %>"> <%= select_icon(@product) %> скачать</a>
+        </div>
+      <% end %>
     </div>
     <div class="photo_cont">
     <div class="photo_product_title">

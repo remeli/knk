@@ -19,5 +19,9 @@ class Product < ActiveRecord::Base
   :path => ":rails_root/public/system/:attachment/:id/:style/:basename.:extension"
   validates_attachment_size :photo, :less_than => 6.megabytes
   validates_attachment_content_type :photo, :content_type => ['image/jpeg', 'image/png', 'image/gif']
+
+  #paperclip -> #attach
+  has_attached_file :attach, :url => "/system/:attachment/:id/:style/:basename.:extension",
+  :path => ":rails_root/public/system/:attachment/:id/:style/:basename.:extension"
   
 end

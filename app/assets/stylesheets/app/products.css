@@ -127,6 +127,17 @@ table .head{
   width:380px;
   padding:10px;
 }
+#show_product .content .attach_file{
+  margin-top:10px;
+  font-size:11px;
+}
+#show_product .content .attach_file a{
+  color:#5A5A5A;
+  text-decoration:none;
+}
+#show_product .content .attach_file a:hover{
+  color:#3A3A3A;
+}
 #show_product .content p{
   margin-top:4px;
 }
@@ -145,6 +156,12 @@ table .head{
 }
 .photo_image{
   text-align:center;
+}
+.photo_image img{
+  -webkit-border-radius:10px 10px 10px 10px;
+  -moz-border-radius:10px 10px 10px 10px;
+  border-radius:10px 10px 10px 10px;
+  -o-border-radius:10px 10px 10px 10px;
 }
 #show_product .add_date{
   border-top:1px solid #eee;

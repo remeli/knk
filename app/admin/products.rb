@@ -32,6 +32,7 @@ ActiveAdmin.register Product do
       f.input :name, :label => "Название товара: "
       f.input :description, :label => "Описание: "
       f.input :photo, :as => :file, :label => "Фотография:"
+      f.input :attach, :as => :file, :label => "Прикрепленный файл(doc/pdf/excel):"
       f.input :manufact, :label => "Производитель: "
       f.input :published, :label => "Опубликовано"
     end
