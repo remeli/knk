@@ -64,6 +64,13 @@ module ApplicationHelper
     end    
   end
   
+  def photo_have?(object)
+    if object.photo.size.to_i > 0
+      true
+    end
+  end
+
+  
   def attach_have?(object)
     if object.attach.size.to_i > 0
       true

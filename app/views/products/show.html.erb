@@ -19,7 +19,11 @@
       <b>Фотография:</b>
     </div>
     <div class="photo_image">
-    <a href="<%= @product.photo.url(:medium) %>" class="lightbox" title="<%="#{@product.name} #{@product.description}" %>"><%= image_tag @product.photo.url(:thumb), :alt => "#{@product.name} #{@product.description}" %></a>          
+    <% if photo_have?(@product) %>
+      <a href="<%= @product.photo.url(:medium) %>" class="lightbox"   title="<%="#{@product.name} #{@product.description}" %>"><%= image_tag @product.photo.url(:thumb), :alt => "#{@product.name} #{@product.description}" %></a>              
+    <% else %>
+      Фотография отсутствует
+    <% end %>
     </div>
     </div>
     <div class="clear"></div>
