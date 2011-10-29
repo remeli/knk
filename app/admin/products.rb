@@ -10,7 +10,21 @@ ActiveAdmin.register Product do
     column :id
     column "Название", :name
     column "Описание", :description
-    column "Опубликовано", :published, :sortable => :published do |product|
+    column "Наличие фото" do | product |
+        if product.photo_file_size.to_i > 0
+          div do
+            photo_product(product)
+          end
+        end
+    end
+    column "Наличие прикр. файла" do |product|
+      if attach_have?(product)
+        div do
+          select_icon(product)
+        end
+      end
+    end
+    column "Опубликовано", :published, :sortable => :published do | product |
       if product.published?
         div :class => "published_column" do 
           "Опубликовано"
@@ -24,7 +38,7 @@ ActiveAdmin.register Product do
     default_actions
   end
   
-  form :html => { :enctype => "multipart/form-data" } do |f|
+ form :html => { :enctype => "multipart/form-data" } do | f |
     f.inputs "Детали" do
       f.inputs do
         f.input :category, :label => "Рубрика: *"
