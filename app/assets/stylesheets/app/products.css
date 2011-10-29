@@ -29,24 +29,6 @@
   float:left;
 /*  border:1px solid #ccc;*/
 }
-#categories ul{
-  margin-left:15px;
-}
-#categories .select{
-  
-}
-#categories ul li{
-  list-style-type: none;
-  margin-bottom:4px;
-  overflow: visible;
-}
-#catalog #categories ul li a{
-  color:#3b3b3b;
-  text-decoration:none;
-}
-#catalog #categories ul li a:hover{
-  color:#7C7C7C;
-}
 #catalog #table_for_products{
   margin-top:-2px;
   width:700px;

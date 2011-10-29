@@ -610,3 +610,27 @@ color: #922;
   border:1px solid #47B42C;
   margin-bottom:20px;
 }
+
+/* tree categories */
+#categories ul{
+  margin-left:15px;
+}
+#categories ul li{
+  list-style-type: none;
+  margin-bottom:4px;
+  overflow: visible;
+}
+#categories ul li a{
+  color:#3b3b3b;
+  text-decoration:none;
+}
+#categories ul li a:hover{
+  color:#7C7C7C;
+}
+#categories span{
+  border:1px solid #ccc;
+  display:block;
+  width:10px;
+  height:15px;
+  float:left;
+}

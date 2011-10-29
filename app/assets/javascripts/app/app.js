@@ -91,5 +91,3 @@ $(document).ready(function() {
 $(document).ready(function() {
   $('a.lightbox1').lightBox();
 });
-
-// menu
