@@ -88,3 +88,6 @@ document.onclick = jsddm_close;
 $(document).ready(function() {
   $('a.lightbox').lightBox();
 });
+$(document).ready(function() {
+  $('a.lightbox1').lightBox();
+});
