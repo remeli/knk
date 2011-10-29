@@ -627,10 +627,3 @@ color: #922;
 #categories ul li a:hover{
   color:#7C7C7C;
 }
-#categories span{
-  border:1px solid #ccc;
-  display:block;
-  width:10px;
-  height:15px;
-  float:left;
-}

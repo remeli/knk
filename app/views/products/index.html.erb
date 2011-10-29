@@ -5,11 +5,13 @@
       <span class="title_path"><%= link_to "Каталог", products_path %> → Все товары</span>
     </div>
     <div id="categories">
-      <ul>
+      <ul id="menutree">
         <!-- TODO: сделать js tree -->
         <% for category in @main_categories %>
           <li>
-            <%= link_to category.name, category %>
+            <!-- <%= link_to category.name, category %> -->
+            <!-- todo: доделать другие ul li -->
+            <span class="folder"><%= category.name %></span>
             <%= raw find_all_subcategories(category) %>
           </li>
         <% end %>

@@ -91,3 +91,8 @@ $(document).ready(function() {
 $(document).ready(function() {
   $('a.lightbox1').lightBox();
 });
+
+//tree
+$(document).ready(function(){
+ $("#menutree").treeview();
+ });

@@ -8,7 +8,7 @@
       → <%= @category.name %>
     </div>
     <div id="categories">
-      <ul id="tree">
+      <ul>
         <% for category in @main_categories %>
           <li>
             <%= link_to category.name, category %>
