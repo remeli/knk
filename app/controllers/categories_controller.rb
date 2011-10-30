@@ -3,7 +3,7 @@ class CategoriesController < ApplicationController
   
   def show
     @products = @category.products.published.page(params[:page]).per(30)
-    @title = "Каталог / #{@category.name}"      
+    @title = "Каталог / #{@category.name}"
   end
   
   private
