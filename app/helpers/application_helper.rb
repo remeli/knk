@@ -44,13 +44,17 @@ module ApplicationHelper
       ret = "<ul>"
       category.children.each { |subcat|
         if subcat.children.size > 0
-          ret += "<li>"
+          ret += "<li class='closed'>"
+          ret += "<span class='folder'>"
           ret += link_to subcat.name, subcat
+          ret += "</span>"
           ret += find_all_subcategories(subcat)
           ret += "</li>"
         else
           ret += "<li>"
+          ret += "<span class='notsubcat'>"
           ret += link_to subcat.name, subcat
+          ret += '</span>'
           ret += "</li>"
         end
       }

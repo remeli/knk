@@ -8,10 +8,12 @@
       <ul id="menutree">
         <!-- TODO: сделать js tree -->
         <% for category in @main_categories %>
-          <li>
+          <li class="closed">
             <!-- <%= link_to category.name, category %> -->
             <!-- todo: доделать другие ul li -->
-            <span class="folder"><%= category.name %></span>
+            <span class="folder">
+              <%= link_to category.name, category %>
+            </span>
             <%= raw find_all_subcategories(category) %>
           </li>
         <% end %>
