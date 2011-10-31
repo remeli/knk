@@ -6,11 +6,8 @@
     </div>
     <div id="categories">
       <ul id="menutree">
-        <!-- TODO: сделать js tree -->
         <% for category in @main_categories %>
           <li class="closed">
-            <!-- <%= link_to category.name, category %> -->
-            <!-- todo: доделать другие ul li -->
             <span class="folder">
               <%= link_to category.name, category %>
             </span>

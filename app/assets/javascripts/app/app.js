@@ -95,4 +95,14 @@ $(document).ready(function() {
 //tree
 $(document).ready(function(){
  $("#menutree").treeview();
+ $(document).ready(function(){
+   $(".folder").click(function(){
+     if ($(this).hasClass("openfolder")){
+       $(this).removeClass("openfolder");  
+     }
+     else{
+       $(this).addClass("openfolder");
+     };
+   });
  });
+});

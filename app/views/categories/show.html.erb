@@ -8,10 +8,12 @@
       → <%= @category.name %>
     </div>
     <div id="categories">
-      <ul>
+      <ul id="menutree">
         <% for category in @main_categories %>
-          <li>
-            <%= link_to category.name, category %>
+          <li class="closed">
+            <span class="folder">
+              <%= link_to category.name, category %>
+            </span>
             <%= raw find_all_subcategories(category) %>
           </li>
         <% end %>

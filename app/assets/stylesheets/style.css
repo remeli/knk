@@ -618,7 +618,6 @@ color: #922;
 }
 #categories ul li{
   list-style-type: none;
-  margin-bottom:4px;
   overflow: visible;
 }
 #categories ul li a{
@@ -636,9 +635,19 @@ color: #922;
   width:200px;
   display:block;
   padding-left:15px;
+  margin-top:7px;
 }
 #categories span.notsubcat{
   background-image:url('menu-dot.png');
+  background-repeat:no-repeat;
+  background-position: left;
+/*  border:1px solid #ccc;*/
+  width:200px;
+  display:block;
+  padding-left:15px;  
+}
+#categories span.openfolder{
+  background-image:url('menu-arrow-down.png');
   background-repeat:no-repeat;
   background-position: left;
 /*  border:1px solid #ccc;*/
