@@ -94,7 +94,10 @@ $(document).ready(function() {
 
 //tree
 $(document).ready(function(){
- $("#menutree").treeview();
+ $("#menutree").treeview({
+		animated: "fast",
+    persist: "cookie"
+ });
  $(document).ready(function(){
    $(".folder").click(function(){
      if ($(this).hasClass("openfolder")){
