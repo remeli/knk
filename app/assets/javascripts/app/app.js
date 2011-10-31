@@ -96,16 +96,23 @@ $(document).ready(function() {
 $(document).ready(function(){
  $("#menutree").treeview({
 		animated: "fast",
-    persist: "cookie"
+    persist: "cookie",
  });
- $(document).ready(function(){
-   $(".folder").click(function(){
-     if ($(this).hasClass("openfolder")){
-       $(this).removeClass("openfolder");  
-     }
-     else{
-       $(this).addClass("openfolder");
-     };
-   });
- });
+});
+//tree dynamic
+$(document).ready(function(){
+  $("#categories span").click(function(){
+    if( $(this).parent("li").hasClass("collapsable") ){
+      $(this).addClass("openfolder");
+      // window.console && console.log("%o was toggled", this);
+    }
+    else{
+      $(this).removeClass("openfolder");
+    };
+  });
+});
+$(document).ready(function(){
+  if( $("li").is('.collapsable') ){
+    $("li.collapsable>span").addClass("openfolder");
+  }
 });
