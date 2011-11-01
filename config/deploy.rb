@@ -34,11 +34,12 @@ end
 # task :compile_assets do
 #    run "cd #{current_path} && RAILS_ENV=production /var/lib/gems/1.8/bin/bundle exec rake assets:precompile"
 # end
-# #paperclip
-# task :symlink_shared, roles => :app do
-#   run "ln -nfs #{shared_path}/system #{release_path}/public/system"
-# end
-# after "deploy:update_code", :symlink_shared
+
+#paperclip
+task :symlink_shared, roles => :app do
+  run "ln -nfs #{shared_path}/system #{release_path}/public/system"
+end
+after "deploy:update_code", :symlink_shared
 
 set :unicorn_rails, "/var/lib/gems/1.8/bin/unicorn_rails"
 set :unicorn_conf, "/etc/unicorn/knkelectro.kudinsergei.rb"
