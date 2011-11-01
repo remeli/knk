@@ -20,7 +20,7 @@
     </div>
     <div class="photo_image">
     <% if photo_have?(@product) %>
-      <a href="<%= @product.photo.url(:medium) %>" class="lightbox"   title="<%="#{@product.name} #{@product.description}" %>"><%= image_tag @product.photo.url(:thumb), :alt => "#{@product.name} #{@product.description}" %></a>              
+      <a href="<%= @product.photo.url(:medium) %>" class="lightbox"   title="<%="#{@product.name}" %>"><%= image_tag @product.photo.url(:thumb), :alt => "#{@product.name}" %></a>
     <% else %>
       Фотография отсутствует
     <% end %>

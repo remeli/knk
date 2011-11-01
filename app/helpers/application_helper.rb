@@ -31,6 +31,10 @@ module ApplicationHelper
     raw(truncate(object.body, :length => length))
   end
   
+  def product_desc_more(object, length=50)
+    raw(truncate(object.description, :length => length))
+  end
+  
   def title_more(object)
     raw(truncate(object.title, :length => 35))
   end
