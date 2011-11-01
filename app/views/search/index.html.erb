@@ -4,18 +4,20 @@
   </div>
   <div id="table_for_products">
       <table>
-        <tr class="head">
+        <tr id="headtable">
           <td>Наименование:</td>
           <td>Описание:</td>
           <td>Производитель:</td>
           <td>Категория:</td>
+          <td>Наличие фотографии:</td>
         </tr>
-        <% @products.each do |product| %>
+        <% @products.reverse.each do |product| %>
           <tr class="<%= cycle('list_line_odd', 'list_line_even') %>">
             <td><%= link_to product.name, product %></td>
-            <td><%= product.description %></td>
+            <td><%= product_desc_more(product) %></td>
             <td><%= product.manufact %></td>
             <td><%= link_to product.category.name, product.category %></td>
+            <td><%= photo_product(product) %></td>
           </tr>
         <% end %>
       </table>

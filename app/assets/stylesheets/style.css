@@ -24,7 +24,8 @@ margin-top: 20px;
 margin-left: 106px;
 width: 279px;
 height: 90px;
-background:url('info_header.png');
+background:url('info_header_2.png');
+background-repeat:no-repeat;
 color: #3b3b3b;
 font-family: Helvetica,Tahoma,sans-serif;
 }
