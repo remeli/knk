@@ -49,7 +49,7 @@ set :unicorn_pid, "/var/run/unicorn/knkelectro.kudinsergei.pid"
 namespace :deploy do
   desc "Start application"
   task :start, :roles => :app do
-    run "#{unicorn_rails} -Dc #{unicorn_conf}"
+    run "MAGICK_THREAD_LIMIT=1 #{unicorn_rails} -Dc #{unicorn_conf}"
   end
 
   desc "Stop application"
@@ -59,7 +59,7 @@ namespace :deploy do
 
   desc "Restart Application"
   task :restart, :roles => :app do
-    run "[ -f #{unicorn_pid} ] && kill -USR2 `cat #{unicorn_pid}` || #{unicorn_rails} -Dc #{unicorn_conf}"
+    run "[ -f #{unicorn_pid} ] && kill -USR2 `cat #{unicorn_pid}` || MAGICK_THREAD_LIMIT=1 #{unicorn_rails} -Dc #{unicorn_conf}"
   end
 end
 
