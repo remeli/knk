@@ -1,7 +1,7 @@
 class ProductsController < ApplicationController
   before_filter :load_categories
   def index
-    @products = Product.published.page(params[:page]).per(30)
+    @products = Product.published.page(params[:page]).per(25)
     @title = "Каталог"
   end
   
