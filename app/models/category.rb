@@ -9,5 +9,4 @@ class Category < ActiveRecord::Base
   scope :childrens, where("parent_id IS NOT NULL")
   scope :mains, where("parent_id IS NULL")
   validates :name, :presence => { :message => "Название обязательно" }
-  
 end
