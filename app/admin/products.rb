@@ -9,7 +9,7 @@ ActiveAdmin.register Product do
   index do
     column :id
     column "Название", :name
-    column "Описание", :description
+    # column "Описание", :description
     column "Наличие фото" do | product |
         if product.photo_file_size.to_i > 0
           div do
