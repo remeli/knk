@@ -635,6 +635,18 @@ color: #922;
   color:#3b3b3b;
   text-decoration:none;
 }
+#categories a.active_category{
+  color:#eee;
+  background:#676767;
+  border:1px solid #676767;
+  padding:3px;
+  text-decoration:none;
+}
+#categories a.active_category:hover{
+  color:#fff;
+  background:#474747;
+  border:1px solid #000;
+}
 #categories ul li a:hover{
   color:#7C7C7C;
 }

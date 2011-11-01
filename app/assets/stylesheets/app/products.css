@@ -53,10 +53,11 @@
   padding:10px;
   border:1px solid #ccc;
 }
-table .head{
+#headtable{
   font-size:14px;
   font-weight: bold;
-  background:#EAEAEA;
+  color:#eee;
+  background:#676767;
 }
 .list_line_odd{
   background:#fff;

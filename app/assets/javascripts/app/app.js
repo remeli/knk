@@ -118,6 +118,14 @@ $(document).ready(function(){
   }
 });
 $(document).ready(function(){
-  $("ul#cabel_and_lamp").cycleThru({delay: 3000});
+  $("ul#cabel_and_lamp").cycleThru({delay: 3500});
 });
 
+//active menu
+$(document).ready(function(){
+  var name = document.location.href;
+  var active = new Array();
+  active = name.split('/');
+  // alert(active[4]);
+  $("a[href^='/categories/"+active[4]+"']").addClass("active_category");
+});
