@@ -66,6 +66,12 @@ module ApplicationHelper
     end
   end  
   
+  def isset_subcat?(object)
+    if object.children.size > 0
+      true
+    end
+  end
+  
   def photo_product(object)
     if object.photo.size.to_i > 0
       image_tag('/assets/camera.png')
