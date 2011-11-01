@@ -117,3 +117,7 @@ $(document).ready(function(){
     $("li.collapsable>span").addClass("openfolder");
   }
 });
+$(document).ready(function(){
+  $("ul#cabel_and_lamp").cycleThru({delay: 3000});
+});
+

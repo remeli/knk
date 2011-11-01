@@ -185,7 +185,18 @@ left: 59px;
 float: left;
 width: 351px;
 height: 310px;
-background: url('cable_and_lamp.png');
+overflow:hidden;
+}
+#cabel_and_lamp li{
+opacity:0;
+position:absolute;
+}
+#cabel_and_lamp li #lamp{ 
+margin-left:40px;
+}
+#cabel_and_lamp li #socket{ 
+margin-left:70px;
+margin-top:50px;
 }
 #header_wall #header_wall_text_one {
 position: relative;
