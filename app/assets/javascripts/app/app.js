@@ -111,6 +111,7 @@ $(document).ready(function(){
     };
   });
 });
+//save state tree
 $(document).ready(function(){
   if( $("li").is('.collapsable') ){
     $("li.collapsable>span").addClass("openfolder");

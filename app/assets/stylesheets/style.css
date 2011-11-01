@@ -627,6 +627,9 @@ color: #922;
 #categories ul li a:hover{
   color:#7C7C7C;
 }
+#categories a.active{
+  color:#6C9947;
+}
 #categories span{
   background-image:url('menu-arrow-right.png');
   background-repeat:no-repeat;

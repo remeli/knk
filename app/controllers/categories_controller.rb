@@ -33,5 +33,5 @@ class CategoriesController < ApplicationController
         end  
       end
     end
-    
+  
 end
