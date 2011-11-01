@@ -127,5 +127,5 @@ $(document).ready(function(){
   var active = new Array();
   active = name.split('/');
   // alert(active[4]);
-  $("a[href^='/categories/"+active[4]+"']").addClass("active_category");
+  $("a[href='/categories/"+active[4]+"']").addClass("active_category");
 });
