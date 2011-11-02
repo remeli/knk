@@ -214,7 +214,7 @@ margin-top: 45px;
 margin-left: 132px;
 width: 405px;
 color: #636364;
-text-shadow: 0 1px 0px rgba(0,0,0,0.2);
+/*text-shadow: 0 1px 0px rgba(0,0,0,0.2);*/
 line-height: 17px;
 font-size: 13px;
 font-family: Tahoma,Helvetica,sans-serif;
@@ -431,7 +431,7 @@ vertical-align: top;
 }
 #content #feedback_block .form_feedback label {
 width: 100px;
-text-shadow: 0 1px 0px rgba(0,0,0,0.3);
+/*text-shadow: 0 1px 0px rgba(0,0,0,0.3);*/
 font-size: 12px;
 }
 #content #feedback_block .form_feedback input[type='text'] {
@@ -442,7 +442,7 @@ border: 1px solid #ccc;
 -webkit-border-radius: 5px 5px 5px 5px;
 -moz-border-radius: 5px 5px 5px 5px;
 border-radius: 5px 5px 5px 5px;
-text-shadow: 0 1px 0px rgba(0,0,0,0.3);
+/*text-shadow: 0 1px 0px rgba(0,0,0,0.3);*/
 font-size: 11px;
 -o-border-radius: 5px 5px 5px 5px;
 }
@@ -455,7 +455,7 @@ border: 1px solid #d5d5d5;
 -moz-border-radius: 5px 5px 5px 5px;
 border-radius: 5px 5px 5px 5px;
 color: #3b3b3b;
-text-shadow: 0 1px 0px rgba(0,0,0,0.3);
+/*text-shadow: 0 1px 0px rgba(0,0,0,0.3);*/
 font-size: 11px;
 -o-border-radius: 5px 5px 5px 5px;
 }
@@ -471,7 +471,7 @@ border: 1px solid #d5d5d5;
 -moz-border-radius: 5px 5px 5px 5px;
 border-radius: 5px 5px 5px 5px;
 color: #3b3b3b;
-text-shadow: 0 1px 0px rgba(0,0,0,0.3);
+/*text-shadow: 0 1px 0px rgba(0,0,0,0.3);*/
 font-size: 11px;
 -o-border-radius: 5px 5px 5px 5px;
 }

@@ -1,6 +1,6 @@
 class CategoriesController < ApplicationController
   before_filter :load_category, :load_path
-  
+    
   def show
     @title = "Каталог / #{@category.name}"
     @products = @category.products.published.page(params[:page]).per(30)

@@ -41,7 +41,7 @@
   font-size:12px;
   font-family:Tahoma,Helvetica,sans-serif;
   border-collapse: collapse;
-  text-shadow: 0 1px 0px rgba(0,0,0,0.1);
+/*  text-shadow: 0 1px 0px rgba(0,0,0,0.1);*/
 }
 #catalog #table_for_products table tr{
   height:20px;
