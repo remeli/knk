@@ -1,7 +1,7 @@
 class CategoriesController < ApplicationController
   before_filter :load_category, :load_path
   
-  $categories = []
+  # $categories = []
   
   def show
     @title = "Каталог / #{@category.name}"
@@ -20,16 +20,16 @@ class CategoriesController < ApplicationController
   
   private
     
-    def find_all_cat(category)
-      if category.children.size > 0
-        category.children.each do |subcat|
-          $categories << subcat
-          if subcat.children.size > 0
-            find_all_cat(subcat)
-          end
-        end
-      end
-    end
+    # def find_all_cat(category)
+    #   if category.children.size > 0
+    #     category.children.each do |subcat|
+    #       $categories << subcat
+    #       if subcat.children.size > 0
+    #         find_all_cat(subcat)
+    #       end
+    #     end
+    #   end
+    # end
     
     def load_category
       begin
