@@ -7,15 +7,16 @@ class CategoriesController < ApplicationController
     @title = "Каталог / #{@category.name}"
     @products = @category.products.published.page(params[:page]).per(30)
     # if @products.size == 0
-    #   page, per_page = 1, 1
-    #   @products = Array.new
-    #   @allcat = find_all_cat(@category)
-    #   @allcat.each do |cat|
-    #     for i in (0..cat.products.size-1)
-    #       @products << cat.products[i]
-    #     end
-    #   end
-    # end
+    #    page, per_page = 1, 1
+    #    @products = Array.new
+    #    @allcat = find_all_cat(@category)
+    #    @allcat.each do |cat|
+    #      for i in (0..cat.products.size-1)
+    #        @products << cat.products[i]
+    #      end
+    #    end
+    #    @products = Kaminari.paginate_array(@products).page(params[:page]).per(30)
+    #  end
   end
   
   private
