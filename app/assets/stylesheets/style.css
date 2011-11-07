@@ -669,6 +669,9 @@ color: #922;
 #categories .sub a{
   color:#476899;
 }
+#categories .notsubcat a{
+  color:#886A45;
+}
 #categories span.notsubcat{
   background-image:url('menu-dot.png');
   background-repeat:no-repeat;
